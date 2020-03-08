@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C3765F8237A56AD00EB3A08 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3765F7237A56AD00EB3A08 /* Staff.swift */; };
+		4C560A0323ADDEDB0002E3CE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C560A0223ADDEDB0002E3CE /* Event.swift */; };
+		4C7646182396137B006F3379 /* StaffDetailVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7646172396137A006F3379 /* StaffDetailVIewController.swift */; };
+		4C7B7135237D107800AAB0F0 /* StaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B7134237D107800AAB0F0 /* StaffViewController.swift */; };
+		4CAE209D238656DB0011C0BB /* eventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE209C238656DB0011C0BB /* eventsViewController.swift */; };
+		4CC2E9492361223300242DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2E9482361223300242DD1 /* AppDelegate.swift */; };
+		4CC2E94B2361223300242DD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2E94A2361223300242DD1 /* SceneDelegate.swift */; };
+		4CC2E94D2361223300242DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2E94C2361223300242DD1 /* ViewController.swift */; };
+		4CC2E9502361223300242DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC2E94E2361223300242DD1 /* Main.storyboard */; };
+		4CC2E9522361223400242DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC2E9512361223400242DD1 /* Assets.xcassets */; };
+		4CC2E9552361223400242DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC2E9532361223400242DD1 /* LaunchScreen.storyboard */; };
+		4CC2E9602361223400242DD1 /* Actual_ID_Card_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2E95F2361223400242DD1 /* Actual_ID_Card_AppTests.swift */; };
+		4CC2E96B2361223400242DD1 /* Actual_ID_Card_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2E96A2361223400242DD1 /* Actual_ID_Card_AppUITests.swift */; };
+		4CE71E9223838DC60065315E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CE71E9123838DC60065315E /* GoogleService-Info.plist */; };
+		83116805C365953C49E22707 /* Pods_Leland_HS_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5280A69EE8A1C8145008827B /* Pods_Leland_HS_AppTests.framework */; };
+		AF32296F2AA3C8ED32892CC6 /* Pods_Leland_HS_App_Leland_HS_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567B07E89D10C2B59334DEFD /* Pods_Leland_HS_App_Leland_HS_AppUITests.framework */; };
+		E94A1EA1994059CCE7DFA1C9 /* Pods_Leland_HS_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD5E89532D1BDEE575C2EE2 /* Pods_Leland_HS_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CC2E95C2361223400242DD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CC2E93D2361223300242DD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CC2E9442361223300242DD1;
+			remoteInfo = "Actual ID Card App";
+		};
+		4CC2E9672361223400242DD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CC2E93D2361223300242DD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CC2E9442361223300242DD1;
+			remoteInfo = "Actual ID Card App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		327FE9B681DBEFD7B855F4B2 /* Pods-Leland HS App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leland HS App.debug.xcconfig"; path = "Target Support Files/Pods-Leland HS App/Pods-Leland HS App.debug.xcconfig"; sourceTree = "<group>"; };
+		3D3B07D19B685DC1EA711549 /* Pods-Leland HS AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leland HS AppTests.release.xcconfig"; path = "Target Support Files/Pods-Leland HS AppTests/Pods-Leland HS AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E0A41159CB443CD11E8B3DC /* Pods-Leland HS App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leland HS App.release.xcconfig"; path = "Target Support Files/Pods-Leland HS App/Pods-Leland HS App.release.xcconfig"; sourceTree = "<group>"; };
+		4C3765F7237A56AD00EB3A08 /* Staff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Staff.swift; path = Models/Staff.swift; sourceTree = "<group>"; };
+		4C560A0223ADDEDB0002E3CE /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		4C7646172396137A006F3379 /* StaffDetailVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffDetailVIewController.swift; sourceTree = SOURCE_ROOT; };
+		4C7B7134237D107800AAB0F0 /* StaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffViewController.swift; sourceTree = "<group>"; };
+		4CAE209C238656DB0011C0BB /* eventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsViewController.swift; sourceTree = "<group>"; };
+		4CC2E9452361223300242DD1 /* Leland High.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Leland High.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC2E9482361223300242DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CC2E94A2361223300242DD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4CC2E94C2361223300242DD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CC2E94F2361223300242DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CC2E9512361223400242DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CC2E9542361223400242DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CC2E9562361223400242DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC2E95B2361223400242DD1 /* Leland HS AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leland HS AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC2E95F2361223400242DD1 /* Actual_ID_Card_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actual_ID_Card_AppTests.swift; sourceTree = "<group>"; };
+		4CC2E9612361223400242DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC2E9662361223400242DD1 /* Leland HS AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leland HS AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC2E96A2361223400242DD1 /* Actual_ID_Card_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actual_ID_Card_AppUITests.swift; sourceTree = "<group>"; };
+		4CC2E96C2361223400242DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC2E97823612E9D00242DD1 /* School ID Card.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "School ID Card.entitlements"; sourceTree = "<group>"; };
+		4CE71E9123838DC60065315E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5280A69EE8A1C8145008827B /* Pods_Leland_HS_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leland_HS_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		567B07E89D10C2B59334DEFD /* Pods_Leland_HS_App_Leland_HS_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leland_HS_App_Leland_HS_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		675EAC53AABA7EF36563C206 /* Pods-Leland HS App-Leland HS AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leland HS App-Leland HS AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Leland HS App-Leland HS AppUITests/Pods-Leland HS App-Leland HS AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E0BBDB07D9D92795A6ACD077 /* Pods-Leland HS AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leland HS AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Leland HS AppTests/Pods-Leland HS AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFE661C007EC9739CF69ED2A /* Pods-Leland HS App-Leland HS AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leland HS App-Leland HS AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Leland HS App-Leland HS AppUITests/Pods-Leland HS App-Leland HS AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDD5E89532D1BDEE575C2EE2 /* Pods_Leland_HS_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leland_HS_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CC2E9422361223300242DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E94A1EA1994059CCE7DFA1C9 /* Pods_Leland_HS_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC2E9582361223400242DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83116805C365953C49E22707 /* Pods_Leland_HS_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC2E9632361223400242DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF32296F2AA3C8ED32892CC6 /* Pods_Leland_HS_App_Leland_HS_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33979A9D1F23DFE47BE84F16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				327FE9B681DBEFD7B855F4B2 /* Pods-Leland HS App.debug.xcconfig */,
+				3E0A41159CB443CD11E8B3DC /* Pods-Leland HS App.release.xcconfig */,
+				EFE661C007EC9739CF69ED2A /* Pods-Leland HS App-Leland HS AppUITests.debug.xcconfig */,
+				675EAC53AABA7EF36563C206 /* Pods-Leland HS App-Leland HS AppUITests.release.xcconfig */,
+				E0BBDB07D9D92795A6ACD077 /* Pods-Leland HS AppTests.debug.xcconfig */,
+				3D3B07D19B685DC1EA711549 /* Pods-Leland HS AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4CC2E93C2361223300242DD1 = {
+			isa = PBXGroup;
+			children = (
+				4CC2E9472361223300242DD1 /* Actual ID Card App */,
+				4CC2E95E2361223400242DD1 /* Actual ID Card AppTests */,
+				4CC2E9692361223400242DD1 /* Actual ID Card AppUITests */,
+				4CC2E9462361223300242DD1 /* Products */,
+				33979A9D1F23DFE47BE84F16 /* Pods */,
+				D50E5CFA244CD4C69AFBB11F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4CC2E9462361223300242DD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CC2E9452361223300242DD1 /* Leland High.app */,
+				4CC2E95B2361223400242DD1 /* Leland HS AppTests.xctest */,
+				4CC2E9662361223400242DD1 /* Leland HS AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CC2E9472361223300242DD1 /* Actual ID Card App */ = {
+			isa = PBXGroup;
+			children = (
+				4CC2E97823612E9D00242DD1 /* School ID Card.entitlements */,
+				4CC2E9482361223300242DD1 /* AppDelegate.swift */,
+				4CC2E94A2361223300242DD1 /* SceneDelegate.swift */,
+				4CC2E94C2361223300242DD1 /* ViewController.swift */,
+				4CC2E94E2361223300242DD1 /* Main.storyboard */,
+				4C7646172396137A006F3379 /* StaffDetailVIewController.swift */,
+				4C3765F7237A56AD00EB3A08 /* Staff.swift */,
+				4C7B7134237D107800AAB0F0 /* StaffViewController.swift */,
+				4CAE209C238656DB0011C0BB /* eventsViewController.swift */,
+				4CC2E9512361223400242DD1 /* Assets.xcassets */,
+				4CC2E9532361223400242DD1 /* LaunchScreen.storyboard */,
+				4CC2E9562361223400242DD1 /* Info.plist */,
+				4C560A0223ADDEDB0002E3CE /* Event.swift */,
+				4CE71E9123838DC60065315E /* GoogleService-Info.plist */,
+			);
+			path = "Actual ID Card App";
+			sourceTree = "<group>";
+		};
+		4CC2E95E2361223400242DD1 /* Actual ID Card AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CC2E95F2361223400242DD1 /* Actual_ID_Card_AppTests.swift */,
+				4CC2E9612361223400242DD1 /* Info.plist */,
+			);
+			path = "Actual ID Card AppTests";
+			sourceTree = "<group>";
+		};
+		4CC2E9692361223400242DD1 /* Actual ID Card AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4CC2E96A2361223400242DD1 /* Actual_ID_Card_AppUITests.swift */,
+				4CC2E96C2361223400242DD1 /* Info.plist */,
+			);
+			path = "Actual ID Card AppUITests";
+			sourceTree = "<group>";
+		};
+		D50E5CFA244CD4C69AFBB11F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDD5E89532D1BDEE575C2EE2 /* Pods_Leland_HS_App.framework */,
+				567B07E89D10C2B59334DEFD /* Pods_Leland_HS_App_Leland_HS_AppUITests.framework */,
+				5280A69EE8A1C8145008827B /* Pods_Leland_HS_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CC2E9442361223300242DD1 /* Leland HS App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC2E96F2361223400242DD1 /* Build configuration list for PBXNativeTarget "Leland HS App" */;
+			buildPhases = (
+				35177BE08CE2435F8DF62A11 /* [CP] Check Pods Manifest.lock */,
+				4CC2E9412361223300242DD1 /* Sources */,
+				4CC2E9422361223300242DD1 /* Frameworks */,
+				4CC2E9432361223300242DD1 /* Resources */,
+				19DD21AE07EAAB4DE7AF99F4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Leland HS App";
+			productName = "Actual ID Card App";
+			productReference = 4CC2E9452361223300242DD1 /* Leland High.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CC2E95A2361223400242DD1 /* Leland HS AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC2E9722361223400242DD1 /* Build configuration list for PBXNativeTarget "Leland HS AppTests" */;
+			buildPhases = (
+				289A9E20A78960B87B328E89 /* [CP] Check Pods Manifest.lock */,
+				4CC2E9572361223400242DD1 /* Sources */,
+				4CC2E9582361223400242DD1 /* Frameworks */,
+				4CC2E9592361223400242DD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CC2E95D2361223400242DD1 /* PBXTargetDependency */,
+			);
+			name = "Leland HS AppTests";
+			productName = "Actual ID Card AppTests";
+			productReference = 4CC2E95B2361223400242DD1 /* Leland HS AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4CC2E9652361223400242DD1 /* Leland HS AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC2E9752361223400242DD1 /* Build configuration list for PBXNativeTarget "Leland HS AppUITests" */;
+			buildPhases = (
+				7832D8D1D4A54DCE39627E19 /* [CP] Check Pods Manifest.lock */,
+				4CC2E9622361223400242DD1 /* Sources */,
+				4CC2E9632361223400242DD1 /* Frameworks */,
+				4CC2E9642361223400242DD1 /* Resources */,
+				7B12684DA455A4B9FEA499AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CC2E9682361223400242DD1 /* PBXTargetDependency */,
+			);
+			name = "Leland HS AppUITests";
+			productName = "Actual ID Card AppUITests";
+			productReference = 4CC2E9662361223400242DD1 /* Leland HS AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CC2E93D2361223300242DD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Michael Que";
+				TargetAttributes = {
+					4CC2E9442361223300242DD1 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					4CC2E95A2361223400242DD1 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 4CC2E9442361223300242DD1;
+					};
+					4CC2E9652361223400242DD1 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 4CC2E9442361223300242DD1;
+					};
+				};
+			};
+			buildConfigurationList = 4CC2E9402361223300242DD1 /* Build configuration list for PBXProject "Leland HS App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CC2E93C2361223300242DD1;
+			productRefGroup = 4CC2E9462361223300242DD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CC2E9442361223300242DD1 /* Leland HS App */,
+				4CC2E95A2361223400242DD1 /* Leland HS AppTests */,
+				4CC2E9652361223400242DD1 /* Leland HS AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CC2E9432361223300242DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC2E9552361223400242DD1 /* LaunchScreen.storyboard in Resources */,
+				4CE71E9223838DC60065315E /* GoogleService-Info.plist in Resources */,
+				4CC2E9522361223400242DD1 /* Assets.xcassets in Resources */,
+				4CC2E9502361223300242DD1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC2E9592361223400242DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC2E9642361223400242DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19DD21AE07EAAB4DE7AF99F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leland HS App/Pods-Leland HS App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leland HS App/Pods-Leland HS App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Leland HS App/Pods-Leland HS App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		289A9E20A78960B87B328E89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leland HS AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35177BE08CE2435F8DF62A11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leland HS App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7832D8D1D4A54DCE39627E19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leland HS App-Leland HS AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B12684DA455A4B9FEA499AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leland HS App-Leland HS AppUITests/Pods-Leland HS App-Leland HS AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leland HS App-Leland HS AppUITests/Pods-Leland HS App-Leland HS AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Leland HS App-Leland HS AppUITests/Pods-Leland HS App-Leland HS AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CC2E9412361223300242DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC2E94D2361223300242DD1 /* ViewController.swift in Sources */,
+				4CC2E9492361223300242DD1 /* AppDelegate.swift in Sources */,
+				4CAE209D238656DB0011C0BB /* eventsViewController.swift in Sources */,
+				4C3765F8237A56AD00EB3A08 /* Staff.swift in Sources */,
+				4C7646182396137B006F3379 /* StaffDetailVIewController.swift in Sources */,
+				4CC2E94B2361223300242DD1 /* SceneDelegate.swift in Sources */,
+				4C7B7135237D107800AAB0F0 /* StaffViewController.swift in Sources */,
+				4C560A0323ADDEDB0002E3CE /* Event.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC2E9572361223400242DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC2E9602361223400242DD1 /* Actual_ID_Card_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC2E9622361223400242DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC2E96B2361223400242DD1 /* Actual_ID_Card_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CC2E95D2361223400242DD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CC2E9442361223300242DD1 /* Leland HS App */;
+			targetProxy = 4CC2E95C2361223400242DD1 /* PBXContainerItemProxy */;
+		};
+		4CC2E9682361223400242DD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CC2E9442361223300242DD1 /* Leland HS App */;
+			targetProxy = 4CC2E9672361223400242DD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CC2E94E2361223300242DD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC2E94F2361223300242DD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CC2E9532361223400242DD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC2E9542361223400242DD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CC2E96D2361223400242DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4CC2E96E2361223400242DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CC2E9702361223400242DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 327FE9B681DBEFD7B855F4B2 /* Pods-Leland HS App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Actual ID Card App/School ID Card.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R547MBLN4D;
+				INFOPLIST_FILE = "Actual ID Card App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michaelque.leland-hs-app";
+				PRODUCT_NAME = "Leland High";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CC2E9712361223400242DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E0A41159CB443CD11E8B3DC /* Pods-Leland HS App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Actual ID Card App/School ID Card.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R547MBLN4D;
+				INFOPLIST_FILE = "Actual ID Card App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michaelque.leland-hs-app";
+				PRODUCT_NAME = "Leland High";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4CC2E9732361223400242DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0BBDB07D9D92795A6ACD077 /* Pods-Leland HS AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R547MBLN4D;
+				INFOPLIST_FILE = "Actual ID Card AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Michael-Que.Actual-ID-Card-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leland HS App.app/Leland HS App";
+			};
+			name = Debug;
+		};
+		4CC2E9742361223400242DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3B07D19B685DC1EA711549 /* Pods-Leland HS AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R547MBLN4D;
+				INFOPLIST_FILE = "Actual ID Card AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Michael-Que.Actual-ID-Card-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leland HS App.app/Leland HS App";
+			};
+			name = Release;
+		};
+		4CC2E9762361223400242DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE661C007EC9739CF69ED2A /* Pods-Leland HS App-Leland HS AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R547MBLN4D;
+				INFOPLIST_FILE = "Actual ID Card AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Michael-Que.Actual-ID-Card-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Actual ID Card App";
+			};
+			name = Debug;
+		};
+		4CC2E9772361223400242DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 675EAC53AABA7EF36563C206 /* Pods-Leland HS App-Leland HS AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R547MBLN4D;
+				INFOPLIST_FILE = "Actual ID Card AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Michael-Que.Actual-ID-Card-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Actual ID Card App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CC2E9402361223300242DD1 /* Build configuration list for PBXProject "Leland HS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC2E96D2361223400242DD1 /* Debug */,
+				4CC2E96E2361223400242DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC2E96F2361223400242DD1 /* Build configuration list for PBXNativeTarget "Leland HS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC2E9702361223400242DD1 /* Debug */,
+				4CC2E9712361223400242DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC2E9722361223400242DD1 /* Build configuration list for PBXNativeTarget "Leland HS AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC2E9732361223400242DD1 /* Debug */,
+				4CC2E9742361223400242DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC2E9752361223400242DD1 /* Build configuration list for PBXNativeTarget "Leland HS AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC2E9762361223400242DD1 /* Debug */,
+				4CC2E9772361223400242DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CC2E93D2361223300242DD1 /* Project object */;
+}

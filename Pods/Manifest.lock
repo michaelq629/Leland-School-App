@@ -265,12 +265,14 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - VimeoNetworking (4.1.0)
 
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Core
   - Firebase/Firestore
   - FirebaseFirestoreSwift
+  - VimeoNetworking
 
 SPEC REPOS:
   trunk:
@@ -293,6 +295,7 @@ SPEC REPOS:
     - gRPC-Core
     - leveldb-library
     - nanopb
+    - VimeoNetworking
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
@@ -314,7 +317,8 @@ SPEC CHECKSUMS:
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  VimeoNetworking: faca97d7b158a74d96afb460011e2dc69651c051
 
-PODFILE CHECKSUM: 4ae89e1bf76d07630b4128c8b726ec85b61dd9a0
+PODFILE CHECKSUM: a561639fd7db9aca1aef6472a4878a655275e813
 
 COCOAPODS: 1.8.4

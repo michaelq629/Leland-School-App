@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import VimeoNetworking
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
 
     @IBOutlet weak var iDImageButton: UIButton!
@@ -25,9 +26,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         //staff directory search box effetcs
         
-    getVid(videocode:"396057673")
-        
-        
+  
+    setUpVimeo()
+    
 //ID CARD PICTURE
         
         if let iDPicture = loadImageFromDiskWith(fileName: "iDPicture.jpeg") {
@@ -38,6 +39,38 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
         
         
+        
+    }
+    
+    func setUpVimeo (){
+        let appConfiguration = AppConfiguration(
+        clientIdentifier: "fb1e62c9daa056fa8cb699d1fb39d32c4910c6fd",
+        clientSecret: "qFf2tiv51aU6pPWLEaIbJdSgoVSYpfIICnwa3ZFp/a8LguiXmNhOENZlUBv7O7c16BFCmHWCL1NbHrZOuoFF1FiqROAN2EVNqp+tM/trv1T9NagM73fdtG7MI7zlw2a3",
+        scopes: [.Public, .Private, .Interact], keychainService: "KeychainServiceVimeo")
+
+        let vimeoSessionManager = VimeoSessionManager.defaultSessionManager(
+                baseUrl: VimeoBaseURL,
+                accessToken: "d5b26cea44e3181986d69c382cf90950",
+                apiVersion: "3.4")
+        let vimeoClient = VimeoClient(
+                appConfiguration: appConfiguration,
+                sessionManager: vimeoSessionManager)
+        let videoRequest = Request<[VIMVideo]>(path: "/users/lelandchargers/videos")
+        vimeoClient.request(videoRequest) {
+                result in
+                switch result {
+                case .success(let response):
+                    let videos: [VIMVideo] = response.model
+                    let video = videos[0]
+                    let uri = video.uri
+                    let parsedVideoCode = uri?.replacingOccurrences(of: "/videos/", with: "")
+                    print("\n\n retrieved videos: \(videos) \n\n")
+                    print("link: \(link)")
+                    self.getVid(videocode:parsedVideoCode!)
+                case .failure(let error):
+                    print("\n\n error retrieving videos: \(error) \n\n")
+                }
+            }
         
     }
     
@@ -106,6 +139,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
       let request = URLRequest(url: URL(string: "https://player.vimeo.com/video/\(videocode)")!)
         webView.load(request)
     }
+    
     
 }
 

@@ -17,7 +17,7 @@ target 'Leland HS App' do
 
   # Optionally, include the Swift extensions if you're using Swift.
   pod 'FirebaseFirestoreSwift'
-  
+  pod 'VimeoNetworking'
   target 'Leland HS AppTests' do
     inherit! :search_paths
     # Pods for testing
@@ -26,5 +26,7 @@ target 'Leland HS App' do
   target 'Leland HS AppUITests' do
     # Pods for testing
   end
+  
+ 
 
 end

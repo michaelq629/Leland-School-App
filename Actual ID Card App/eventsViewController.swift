@@ -162,7 +162,7 @@ extension eventsViewController: UITableViewDataSource, UITableViewDelegate{
         
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM dd, yyyy"
+        formatter.dateFormat = "dd-MMM-yyyy"
         // again convert your date to string
         let dateString = formatter.string(from: event.date)
         

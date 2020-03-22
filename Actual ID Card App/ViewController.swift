@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import WebKit
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
 
-class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
- 
     @IBOutlet weak var iDImageButton: UIButton!
+    
+    @IBOutlet weak var webView: WKWebView!
     
     let pickerController = UIImagePickerController()
     
@@ -23,7 +25,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         //staff directory search box effetcs
         
-    
+    getVid(videocode:"396057673")
         
         
 //ID CARD PICTURE
@@ -31,8 +33,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         if let iDPicture = loadImageFromDiskWith(fileName: "iDPicture.jpeg") {
             iDImageButton.setBackgroundImage(iDPicture, for: .normal)
             iDImageButton.setTitle("", for: .normal)
+            
+        
         }
+        
+        
+        
     }
+    
+    
 
 
     @IBAction func importImageButton(_ sender: Any) {
@@ -91,10 +100,16 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         return nil
     }
     
-  
+    //Potenially video functionaility
     
-    
-    
-    
+    func getVid(videocode:String) {
+      let request = URLRequest(url: URL(string: "https://player.vimeo.com/video/\(videocode)")!)
+        webView.load(request)
+    }
     
 }
+
+    
+    
+    
+    

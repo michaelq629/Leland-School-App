@@ -178,13 +178,11 @@ extension eventsViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //        let vc = storyboard?.instantiateViewController(identifier: "StaffDetailViewController") as? StaffDetailViewController
-        //        let monthSection : MonthSection = self.monthSection[indexPath.section]
-        //        let staff : Staff = staffSection.staffArray[indexPath.row]
-        //        vc?.staff = staff
-        //        //        vc?.staffEmail =
-        //        //        vc?.staffWebsite =
-        //        self.navigationController?.pushViewController(vc!, animated: true)
+                let vc = storyboard?.instantiateViewController(identifier: "eventsDetailViewController") as? EventsDetailViewController
+                let monthSection : MonthSection = self.monthSections[indexPath.section]
+                let event:Event = monthSection.eventArray[indexPath.row]
+                vc?.event = event
+                self.navigationController?.pushViewController(vc!, animated: true)
         
     }
     

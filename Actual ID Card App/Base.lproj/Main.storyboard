@@ -179,11 +179,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6h7-LM-1GH">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aoc-K0-KfX">
+                                <rect key="frame" x="0.0" y="191" width="199" height="216"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="U2W-ic-dWK"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -202,6 +204,7 @@
                     <connections>
                         <outlet property="dateButton" destination="e6w-P0-RlR" id="rba-lA-Jd5"/>
                         <outlet property="eventsTableView" destination="htD-HV-zGW" id="mZv-v4-gUJ"/>
+                        <outlet property="pickerView" destination="aoc-K0-KfX" id="Wco-bI-zTE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="unB-mF-f3v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

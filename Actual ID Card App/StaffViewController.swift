@@ -22,8 +22,6 @@ class StaffViewController: UIViewController, UITableViewDataSource, UITableViewD
     let db = Firestore.firestore()
     var staffArray = [Staff]()
     var sections = [StaffSection]()
-    var filteredStaffArray = [Staff]()
-    var searching = false
     // keytype:valuetype
     
     override func viewDidLoad() {
@@ -53,11 +51,15 @@ class StaffViewController: UIViewController, UITableViewDataSource, UITableViewD
                     self.staffArray.append(staff)
                     
                 }
-                print("Loaded \(self.staffArray.count) staff")
+                //Groups by subject
                 let groups = Dictionary(grouping: self.staffArray, by: {staff in staff.subject })
-                self.sections = groups.map { (key, values) in
-                    return StaffSection(subject: key, staffArray: values)
+                
+                self.sections = groups.map { (key, staffArray) in
+                    return StaffSection(subject: key, staffArray: staffArray.sorted { $0.name < $1.name })
                 }
+                self.sections = self.sections.sorted { $0.subject < $1.subject }
+                
+                  
                 
                
                 self.tableView.reloadData()
@@ -104,35 +106,44 @@ class StaffViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: indexPath, animated: true)
         let vc = storyboard?.instantiateViewController(identifier: "StaffDetailViewController") as? StaffDetailViewController
         let staffSection : StaffSection = self.sections[indexPath.section]
         let staff : Staff = staffSection.staffArray[indexPath.row]
         vc?.staff = staff
-        //        vc?.staffEmail =
-        //        vc?.staffWebsite =
         self.navigationController?.pushViewController(vc!, animated: true)
     }
-    
+
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-           
-//           searchedStaff = .filter({$0.lowercased().prefix(searchText.count) == searchText.lowercased()})
-        //USE SELF.STAFFARRAY TO CREATE FILTEREDSTAFFARRAY
-        //{ $0.contains("lo") }
-        self.filteredStaffArray = self.staffArray.filter({$0.name.lowercased().contains(searchText.lowercased())})
-           searching = true
-        let groups = Dictionary(grouping: self.filteredStaffArray, by: {staff in staff.subject })
-        self.sections = groups.map { (key, values) in
-            return StaffSection(subject: key, staffArray: values)
+        
+        if searchBar.text == nil || searchBar.text == ""
+        {
+           searchBar.perform(#selector(self.resignFirstResponder), with: nil, afterDelay: 0.1)
+            let groups = Dictionary(grouping: self.staffArray, by: {staff in staff.subject })
+            self.sections = groups.map { (key, values) in
+                return StaffSection(subject: key, staffArray: values.sorted { $0.name < $1.name })}
+            self.sections = self.sections.sorted { $0.subject < $1.subject }
+                     self.tableView.reloadData()
         }
-           self.tableView.reloadData()
+        
+        else {
+            
+            var filteredStaffArray = self.staffArray.filter({$0.name.lowercased().contains(searchText.lowercased())})
+            let groups = Dictionary(grouping: filteredStaffArray, by: {staff in staff.subject })
+            self.sections = groups.map { (key, values) in
+                return StaffSection(subject: key, staffArray: values.sorted { $0.name < $1.name })
+            }
+            self.sections = self.sections.sorted { $0.subject < $1.subject }
+                self.tableView.reloadData() }
        }
        
        func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-           searching = false
            searchBar.text = ""
            self.tableView.reloadData()
        }
     
+    
+   
     
     
     

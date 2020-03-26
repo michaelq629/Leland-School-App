@@ -19,6 +19,7 @@
 #include <ostream>
 #include <utility>
 
+#include "Firestore/core/src/firebase/firestore/util/hard_assert.h"
 #include "Firestore/core/src/firebase/firestore/util/string_format.h"
 #include "absl/memory/memory.h"
 
@@ -26,9 +27,9 @@ namespace firebase {
 namespace firestore {
 namespace util {
 
-Status::Status(Error code, absl::string_view msg) {
+Status::Status(Error code, std::string msg) {
   HARD_ASSERT(code != Error::Ok);
-  state_ = State::MakePtr(code, static_cast<std::string>(msg));
+  state_ = State::MakePtr(code, std::move(msg));
 }
 
 void Status::Update(const Status& new_status) {

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C3765F8237A56AD00EB3A08 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3765F7237A56AD00EB3A08 /* Staff.swift */; };
 		4C560A0323ADDEDB0002E3CE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C560A0223ADDEDB0002E3CE /* Event.swift */; };
-		4C6F024A24294055006B3B6A /* EventsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F024924294055006B3B6A /* EventsDetailViewController.swift */; };
+		4C567D93242D463A004AAD52 /* EventsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C567D92242D463A004AAD52 /* EventsDetailViewController.swift */; };
 		4C7646182396137B006F3379 /* StaffDetailVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7646172396137A006F3379 /* StaffDetailVIewController.swift */; };
 		4C7B7135237D107800AAB0F0 /* StaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B7134237D107800AAB0F0 /* StaffViewController.swift */; };
 		4CAE209D238656DB0011C0BB /* eventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE209C238656DB0011C0BB /* eventsViewController.swift */; };
@@ -50,7 +50,7 @@
 		3E0A41159CB443CD11E8B3DC /* Pods-Leland HS App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leland HS App.release.xcconfig"; path = "Target Support Files/Pods-Leland HS App/Pods-Leland HS App.release.xcconfig"; sourceTree = "<group>"; };
 		4C3765F7237A56AD00EB3A08 /* Staff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Staff.swift; path = Models/Staff.swift; sourceTree = "<group>"; };
 		4C560A0223ADDEDB0002E3CE /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		4C6F024924294055006B3B6A /* EventsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDetailViewController.swift; sourceTree = "<group>"; };
+		4C567D92242D463A004AAD52 /* EventsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDetailViewController.swift; sourceTree = "<group>"; };
 		4C7646172396137A006F3379 /* StaffDetailVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffDetailVIewController.swift; sourceTree = SOURCE_ROOT; };
 		4C7B7134237D107800AAB0F0 /* StaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffViewController.swift; sourceTree = "<group>"; };
 		4CAE209C238656DB0011C0BB /* eventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsViewController.swift; sourceTree = "<group>"; };
@@ -152,8 +152,8 @@
 				4C7646172396137A006F3379 /* StaffDetailVIewController.swift */,
 				4C3765F7237A56AD00EB3A08 /* Staff.swift */,
 				4C7B7134237D107800AAB0F0 /* StaffViewController.swift */,
-				4C6F024924294055006B3B6A /* EventsDetailViewController.swift */,
 				4CAE209C238656DB0011C0BB /* eventsViewController.swift */,
+				4C567D92242D463A004AAD52 /* EventsDetailViewController.swift */,
 				4CC2E9512361223400242DD1 /* Assets.xcassets */,
 				4CC2E9532361223400242DD1 /* LaunchScreen.storyboard */,
 				4CC2E9562361223400242DD1 /* Info.plist */,
@@ -431,7 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C6F024A24294055006B3B6A /* EventsDetailViewController.swift in Sources */,
+				4C567D93242D463A004AAD52 /* EventsDetailViewController.swift in Sources */,
 				4CC2E94D2361223300242DD1 /* ViewController.swift in Sources */,
 				4CC2E9492361223300242DD1 /* AppDelegate.swift in Sources */,
 				4CAE209D238656DB0011C0BB /* eventsViewController.swift in Sources */,

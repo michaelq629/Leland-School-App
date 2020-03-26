@@ -178,6 +178,7 @@ extension eventsViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
                 let vc = storyboard?.instantiateViewController(identifier: "eventsDetailViewController") as? EventsDetailViewController
                 let monthSection : MonthSection = self.monthSections[indexPath.section]
                 let event:Event = monthSection.eventArray[indexPath.row]

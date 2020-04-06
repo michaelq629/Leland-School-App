@@ -14,9 +14,10 @@ struct StaffSection {
     var staffArray: [Staff]
 }
 
-class StaffViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchResultsUpdating {
+class StaffViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate{
     
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     let db = Firestore.firestore()
     var staffArray = [Staff]()
@@ -27,18 +28,11 @@ class StaffViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
         
         tableView.reloadData()
-//        searchBar.delegate = self
+        searchBar.delegate = self
         tableView.dataSource = self
         tableView.delegate = self
-//        searchBar.delegate = self
+        searchBar.delegate = self
         loadData()
-        let searchController = UISearchController(searchResultsController: nil)
-        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search artists"
-        self.navigationItem.searchController = searchController
-        self.definesPresentationContext = true
-        
         
         //        uploadToFirebase()
     }
@@ -65,7 +59,7 @@ class StaffViewController: UIViewController, UITableViewDataSource, UITableViewD
                 }
                 self.sections = self.sections.sorted { $0.subject < $1.subject }
                 
-                   
+                  
                 
                
                 self.tableView.reloadData()
@@ -143,43 +137,11 @@ class StaffViewController: UIViewController, UITableViewDataSource, UITableViewD
                 self.tableView.reloadData() }
        }
        
-//       func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-//           searchBar.text = ""
-//           self.tableView.reloadData()
-//       }
-//    
-
-
-    func updateSearchResults(for searchController: UISearchController) {
-        print("Searching with: " + (searchController.searchBar.text ?? ""))
-        let searchText = (searchController.searchBar.text ?? "")
-
-        
-        
-        if searchController.searchBar.text == nil || searchController.searchBar.text == ""
-        {
-            let groups = Dictionary(grouping: self.staffArray, by: {staff in staff.subject })
-            self.sections = groups.map { (key, values) in
-                return StaffSection(subject: key, staffArray: values.sorted { $0.name < $1.name })}
-            self.sections = self.sections.sorted { $0.subject < $1.subject }
-                     self.tableView.reloadData()
-        }
-
-        else {
-            
-            var filteredStaffArray = self.staffArray.filter({$0.name.lowercased().contains(searchText.lowercased())})
-            let groups = Dictionary(grouping: filteredStaffArray, by: {staff in staff.subject })
-            self.sections = groups.map { (key, values) in
-                return StaffSection(subject: key, staffArray: values.sorted { $0.name < $1.name })
-            }
-            self.sections = self.sections.sorted { $0.subject < $1.subject }
-                self.tableView.reloadData() }
-        }
+       func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+           searchBar.text = ""
+           self.tableView.reloadData()
+       }
     
-
-
-    
-
     
    
     

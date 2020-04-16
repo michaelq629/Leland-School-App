@@ -14,6 +14,7 @@ target 'Leland HS App' do
   
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod "LetterAvatarKit", "1.2.2" # Swift 5.0+
 
   # Optionally, include the Swift extensions if you're using Swift.
   pod 'FirebaseFirestoreSwift'
@@ -27,6 +28,7 @@ target 'Leland HS App' do
     # Pods for testing
   end
   
+
  
 
 end

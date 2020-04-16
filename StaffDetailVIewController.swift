@@ -8,6 +8,7 @@
 import MessageUI
 import Foundation
 import UIKit
+import LetterAvatarKit
 class StaffDetailViewController: UIViewController {
     
     var staff:Staff?
@@ -16,7 +17,10 @@ class StaffDetailViewController: UIViewController {
     
     @IBOutlet weak var emailLabel: UIButton!
     @IBOutlet weak var websiteLabel: UIButton!
-   
+    @IBOutlet weak var profilePic: UIImageView!
+    
+    
+    
     
     override func viewDidLoad() {
         
@@ -26,6 +30,14 @@ class StaffDetailViewController: UIViewController {
             websiteLabel.isHidden = true
             
         }
+       let configuration = LetterAvatarBuilderConfiguration()
+        configuration.username = staff?.name
+        configuration.circle = true
+        configuration.lettersFont = UIFont.systemFont(ofSize: 25, weight: .bold)
+        configuration.lettersColor = .white
+        configuration.backgroundColors = [UIColor.init(red:211.0/255.0, green: 211.0/255.0, blue: 211.0/255.0, alpha: 1.0)]
+        profilePic.image = UIImage.makeLetterAvatar(withConfiguration: configuration)
+        
         
        
 //        websiteLabel.setTitle(staff!.website?.values, for: .normal)

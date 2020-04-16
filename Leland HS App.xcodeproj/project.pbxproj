@@ -21,6 +21,7 @@
 		4CC2E9552361223400242DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC2E9532361223400242DD1 /* LaunchScreen.storyboard */; };
 		4CC2E9602361223400242DD1 /* Actual_ID_Card_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2E95F2361223400242DD1 /* Actual_ID_Card_AppTests.swift */; };
 		4CC2E96B2361223400242DD1 /* Actual_ID_Card_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC2E96A2361223400242DD1 /* Actual_ID_Card_AppUITests.swift */; };
+		4CE5E8D324490059001E1D89 /* TODO School APP.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5E8D224490059001E1D89 /* TODO School APP.txt */; };
 		4CE71E9223838DC60065315E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CE71E9123838DC60065315E /* GoogleService-Info.plist */; };
 		83116805C365953C49E22707 /* Pods_Leland_HS_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5280A69EE8A1C8145008827B /* Pods_Leland_HS_AppTests.framework */; };
 		AF32296F2AA3C8ED32892CC6 /* Pods_Leland_HS_App_Leland_HS_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567B07E89D10C2B59334DEFD /* Pods_Leland_HS_App_Leland_HS_AppUITests.framework */; };
@@ -69,6 +70,7 @@
 		4CC2E96A2361223400242DD1 /* Actual_ID_Card_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actual_ID_Card_AppUITests.swift; sourceTree = "<group>"; };
 		4CC2E96C2361223400242DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CC2E97823612E9D00242DD1 /* School ID Card.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "School ID Card.entitlements"; sourceTree = "<group>"; };
+		4CE5E8D224490059001E1D89 /* TODO School APP.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TODO School APP.txt"; sourceTree = "<group>"; };
 		4CE71E9123838DC60065315E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5280A69EE8A1C8145008827B /* Pods_Leland_HS_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leland_HS_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		567B07E89D10C2B59334DEFD /* Pods_Leland_HS_App_Leland_HS_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leland_HS_App_Leland_HS_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 				4CC2E97823612E9D00242DD1 /* School ID Card.entitlements */,
 				4CC2E9482361223300242DD1 /* AppDelegate.swift */,
 				4CC2E94A2361223300242DD1 /* SceneDelegate.swift */,
+				4CE5E8D224490059001E1D89 /* TODO School APP.txt */,
 				4CC2E94C2361223300242DD1 /* ViewController.swift */,
 				4CC2E94E2361223300242DD1 /* Main.storyboard */,
 				4C7646172396137A006F3379 /* StaffDetailVIewController.swift */,
@@ -300,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE5E8D324490059001E1D89 /* TODO School APP.txt in Resources */,
 				4CC2E9552361223400242DD1 /* LaunchScreen.storyboard in Resources */,
 				4CE71E9223838DC60065315E /* GoogleService-Info.plist in Resources */,
 				4CC2E9522361223400242DD1 /* Assets.xcassets in Resources */,

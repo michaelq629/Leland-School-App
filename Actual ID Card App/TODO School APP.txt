@@ -1,0 +1,7 @@
+Things to work on 4/16 week
+
+Adding date on home screen
+Adding shadows for home screen
+Getting tableview detail set up
+Get staff detail set up 
+Get hud set up for staff detail 

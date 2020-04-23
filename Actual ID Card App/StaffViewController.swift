@@ -35,7 +35,7 @@ class StaffViewController: UIViewController, UITableViewDataSource, UITableViewD
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search artists"
+        searchController.searchBar.placeholder = "Search Staff"
         self.navigationItem.searchController = searchController
         self.definesPresentationContext = true
         

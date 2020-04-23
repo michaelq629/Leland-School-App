@@ -15,7 +15,6 @@ class StaffDetailViewController: UIViewController {
     var staff:Staff?
     
     @IBOutlet weak var staffName: UILabel!
-    
     @IBOutlet weak var emailLabel: UIButton!
     @IBOutlet weak var websiteLabel: UIButton!
     @IBOutlet weak var profilePic: UIImageView!
@@ -28,7 +27,8 @@ class StaffDetailViewController: UIViewController {
         staffName.text = staff?.name
         emailLabel.setTitle(staff?.email,for: .normal)
         if staff?.website == nil {
-            websiteLabel.isHidden = true
+            websiteLabel.setTitleColor(.black, for: .normal)
+            websiteLabel.setTitle("No Website Available", for: .normal)
             
         }
         if let website = staff?.website{

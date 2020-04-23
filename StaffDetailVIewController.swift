@@ -9,6 +9,7 @@ import MessageUI
 import Foundation
 import UIKit
 import LetterAvatarKit
+import SVProgressHUD
 class StaffDetailViewController: UIViewController {
     
     var staff:Staff?
@@ -30,6 +31,17 @@ class StaffDetailViewController: UIViewController {
             websiteLabel.isHidden = true
             
         }
+        if let website = staff?.website{
+               if website.count == 1{
+               let websiteURL = Array(website.values)[0]
+                   websiteLabel.setTitle(websiteURL, for: .normal)
+            }
+               else {
+                websiteLabel.setTitle("Websites", for: .normal)
+            }
+            
+        }
+        
        let configuration = LetterAvatarBuilderConfiguration()
         configuration.username = staff?.name
         configuration.circle = true
@@ -37,14 +49,6 @@ class StaffDetailViewController: UIViewController {
         configuration.lettersColor = .white
         configuration.backgroundColors = [UIColor.init(red:211.0/255.0, green: 211.0/255.0, blue: 211.0/255.0, alpha: 1.0)]
         profilePic.image = UIImage.makeLetterAvatar(withConfiguration: configuration)
-        
-        
-       
-//        websiteLabel.setTitle(staff!.website?.values, for: .normal)
-       
-        
-       
-        
     }
     
     @IBAction func websiteAction(_ sender: Any) {
@@ -91,19 +95,7 @@ class StaffDetailViewController: UIViewController {
     @IBAction func emailAction(_ sender: Any) {
         
         UIPasteboard.general.string = staff?.email
-
-        // read from clipboard
-       func CopiedAlert (title:String, message:String)
-              {
-                  let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-                  alert.addAction(UIAlertAction(title: "Done", style: UIAlertAction.Style.default, handler: { (acting) in
-                      alert.dismiss(animated: true, completion: nil)
-                  }))
-                  
-                  self.present(alert, animated: true, completion: nil)
-              }
-        
-        CopiedAlert(title: "Success", message: "Email Copied")
+        SVProgressHUD.showInfo(withStatus: "Copy Sucessful")
        
         
        

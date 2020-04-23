@@ -21,7 +21,7 @@ class EventsDetailViewController: UIViewController {
         eventLabel.text = event?.name
         
         let formatter = DateFormatter()
-              formatter.dateFormat = "dd-MMM-yyyy"
+              formatter.dateFormat = "MMM dd, yyyy"
               // again convert your date to string
         let dateString = formatter.string(from: event!.date)
         dateLabel.text = dateString
